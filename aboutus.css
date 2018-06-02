@@ -1,0 +1,22 @@
+.w3-content{
+	padding-left: 390px;
+	margin-top: 200px;
+
+
+	background-image: url(image/fon.jpg);  
+}
+
+body{
+	background-image:  url(images/fon.jpg);  
+}
+.slova{
+	text-decoration: blink;
+	position: absolute;
+	line-height:50px;
+    width: 1200px;
+    bottom: 300px;
+    left: 30px;
+}
+.slova h1{
+	color: black;
+}

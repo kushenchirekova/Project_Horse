@@ -1,0 +1,74 @@
+body{
+	font-family: Arial , sans-serif;
+	padding:0;
+	margin:0;
+	background-color: white;
+}
+.middle{
+	background: url(images/horse25.jpg) no-repeat center top / cover;
+	height: 110vh;
+}
+nav{
+	display: inline-flex;
+	margin-left: 740px;
+	margin-top: 30px;
+}
+.heading{
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both; 
+}
+.menu{
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.menu li{
+	display: inline-flex;
+	margin-right: 41px;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover {
+	color: black;
+}
+select{
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+}
+form{
+    margin-left: 30px;
+   }
+.title{
+	color: black;
+	font-size: 20px;
+}
+
+#char td{
+	color: black;
+	font-size:20px;
+}
+.button{
+	display: inline-block;
+	background: white;
+	color: #484543;
+	border-radius: 3px;
+	display: block;
+	width: 240px;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom:0;
+}
+.but{
+	margin-top: 0px;
+}

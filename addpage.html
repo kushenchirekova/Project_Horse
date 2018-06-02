@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <link href="gallery.css" rel="stylesheet" type="text/css">
+    <link href="menu.css" rel="stylesheet" type="text/css">
+    
+
+</head>
+<body>
+ 
+        
+    <div class="row">
+        <div class="logo">
+         <img src="images/logo.png">
+        </div>
+
+            
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="C:\Users\Asus\Desktop\ДЕЛАЙ\index.html‪">HOME</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>  
+         
+
+    <div class="hero2">
+     <h2>ALL HORSES</h2>
+        </div>
+    
+    
+</div>
+  <div class="container">
+            <div class="block1">
+                <h2><em>Horse Azerbaijan</em></h2>
+                <div class="block1__item">
+                    <img src="images/horse1.jpg" alt="Bestsellers" width="310px">
+                    
+                        <h3>The Azerbaijan horse (Azerbaijani: Azərbaycan atı) is a mountain-steppe racing and riding horse. It is named after the geographic region where the horse was originally developed, Azerbaijan in the Caucasus. The average speed by running of Azerbaijan horse is 1600 metres in 2 minute, 66 seconds.</h3>
+                
+                <div class="block1__item">
+                    <img src="images/horse1.jpg" alt="Sale" width="310px">
+                    <h2><em>American Cream Draft </em> </h2>
+                    <h3>Nearly 98 percent of all American Cream Draft horses have the blood of an Iowan cream colored draft-type mare called Old Granny, who was born at the turn of the 20th century. Her beauty and unique coat coloring prompted breeders in the area to try to create a breed of cream-colored draft horses.</h3>
+                </div>
+                <div class="block1__item">
+                    <img src="images/horse1.jpg" alt="new" width="310px">
+                    <h2><em>Bardigiano</em></h2>
+                    <h3>The Bardigiano is a breed of small horse from the Emilia Romagna region of Italy. It takes its name from the town of Bardi, in the Apennines of Parma, and is principally associated with the surrounding area and the Valle del Ceno.</h3>
+                </div>
+            </div>
+        </div>
+
+  <script>
+    var largeImg = document.getElementById('largeImg');
+
+    var thumbs = document.getElementById('thumbs');
+
+    thumbs.onclick = function(e) {
+      var target = e.target;
+
+      while (target != this) {
+
+        if (target.nodeName == 'A') {
+          showThumbnail(target.href, target.title);
+          return false;
+        }
+
+        target = target.parentNode;
+      }
+
+    }
+
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+
+
+    /* предзагрузка */
+    var imgs = thumbs.getElementsByTagName('img');
+    for (var i = 0; i < imgs.length; i++) {
+      var url = imgs[i].parentNode.href;
+      var img = document.createElement('img');
+      img.src = url;
+    }
+  </script>
+  <script src="menu.js"></script>
+
+</div>
+
+
+
+     
+
+     <footer>
+      <div><p class="get_know"> HORSE <br> Better</p> </div>
+      <div class="Stores">
+      
+      <hr>
+      <p class="shop1">
+         Francois Street<br> 
+         French<br>
+         Tel: 123-456-7890
+      </p>
+      <p class="shop2">
+        M. Valéry FRONTERE<br> 
+        Immeuble Dumeilleur
+       31 avenue du général Leclerc<br>
+        Tel: 123-456-7890
+      </p>
+    </div>
+   
+      <p class="Hourse">
+        Mon - Fri: 8am - 8pm<br>
+        ​​Saturday: 9am - 9pm<br>
+        ​​Sunday: 9am - 10pm
+      </p>
+    </div>
+</footer>
+</body>
+</html>

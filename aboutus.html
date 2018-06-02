@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="aboutus.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+    <link href="gallery.css" rel="stylesheet" type="text/css">
+    <link href="menu.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="row">
+        <div class="logo">
+         <img src="images/logo.png">
+        </div>
+
+            
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    <a href="‪C:\Users\Asus\Desktop\ДЕЛАЙ\index.html">HOME </a>
+    <a href="aboutus.html">About</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> 
+	<div class="slova">
+		
+		<h1><em> WELCOME!
+		This site is dedicated to horse and horse sport lovers
+     Here you can learn more about their types, and of course you can buy one</em></h1>
+	</div>
+ <div class="w3-content" style="max-width:500px">
+  <img class="mySlides" src="images/p1.jpg" style="width:100%; height: 300px">
+  <img class="mySlides" src="images/p2.jpg" style="width:100%; height: 300px">
+  <img class="mySlides" src="images/p22.jpg" style="width:100%; height: 300px">
+  <img class="mySlides" src="images/p9.jpg" style="width:100%; height: 300px">
+  <img class="mySlides" src="images/horsered.jpg" style="width:100%; height: 300px">
+ </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+<footer>
+  <div><p class="get_know"> HORSE <br> Better then car</p>
+  </div>
+  <div class="Stores">
+  
+  <hr>
+  <p class="shop1">
+     Francois Street<br> 
+     French<br>
+     Tel: 123-456-7890
+  </p>
+  <p class="shop2">
+    M. Valéry FRONTERE<br> 
+    Immeuble Dumeilleur
+   31 avenue du général Leclerc<br>
+    Tel: 123-456-7890
+  </p>
+</div>
+<div class="hourse">
+  
+  <hr>
+  <p class="Hourse">
+    Mon - Fri: 8am - 8pm<br>
+    ​​Saturday: 9am - 9pm<br>
+    ​​</p>
+</div>
+</footer>
+<script src="sript.js"></script>
+<script src="menu.js"></script>
+
+
+</body>
+</html>
